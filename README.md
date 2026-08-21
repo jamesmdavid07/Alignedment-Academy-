@@ -37,3 +37,5 @@ npm start
 ```
 
 This is a Next.js Node.js application. Deploy it as a Node.js app, not as a static site. The `start` script uses Hostinger's assigned `PORT` environment variable automatically.
+
+# Alignedment-Academy-
