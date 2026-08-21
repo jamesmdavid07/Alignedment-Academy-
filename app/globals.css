@@ -235,6 +235,49 @@ h1 em, h2 em, .hero h1 em, .page-hero h1 em { color: var(--gold); font-style: no
 .schedule-grid div { padding: 23px; border: 1px solid var(--line); background: var(--white); }
 .schedule-grid strong { font-size: 19px; font-weight: 600; }
 .schedule-grid p { margin: 10px 0 0; color: var(--muted); font-size: 12px; line-height: 1.7; }
+.join-intro { max-width: 650px; margin-bottom: 58px; }
+.join-intro h2 { margin: 18px 0 20px; font-size: clamp(42px, 5vw, 66px); line-height: 1.08; }
+.join-intro p { max-width: 580px; margin: 0; color: var(--muted); font-size: 17px; }
+.experience-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.experience-card { min-width: 0; padding: clamp(30px, 4vw, 52px); border: 1px solid var(--line); }
+.experience-card-dark { background: var(--navy); color: var(--white); border-color: var(--navy); }
+.experience-card-light { background: var(--white); }
+.experience-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
+.experience-number { display: block; margin-bottom: 18px; color: var(--gold-soft); font-size: 11px; font-weight: 700; letter-spacing: .14em; }
+.experience-card-light .experience-number { color: var(--gold); }
+.experience-card h3 { margin: 0; font-size: clamp(31px, 3.2vw, 45px); line-height: 1.04; font-weight: 600; }
+.experience-card h3 em { color: var(--gold-soft); font-style: normal; }
+.experience-card-light h3 em { color: var(--gold); }
+.experience-tag { flex: 0 0 auto; padding: 7px 10px; border: 1px solid rgba(255,255,255,.28); color: var(--gold-soft); font-size: 9px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.experience-card-light .experience-tag { border-color: var(--line); color: var(--gold); }
+.experience-card > p { max-width: 430px; margin: 28px 0 34px; color: #d3deea; font-size: 15px; line-height: 1.65; }
+.experience-card-light > p { color: var(--muted); }
+.detail-list { border-top: 1px solid rgba(255,255,255,.24); }
+.experience-card-light .detail-list { border-color: var(--line); }
+.detail-row { display: flex; justify-content: space-between; gap: 20px; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,.17); font-size: 12px; line-height: 1.45; }
+.experience-card-light .detail-row { border-color: var(--line); }
+.detail-row span { color: #b8c8d8; }
+.experience-card-light .detail-row span { color: var(--muted); }
+.detail-row strong { color: var(--white); text-align: right; font-size: 12px; font-weight: 600; }
+.experience-card-light .detail-row strong { color: var(--navy); }
+.detail-placeholder { opacity: .68; }
+.steps-heading { margin: 48px 0 20px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,.24); }
+.steps-heading .eyebrow { color: var(--gold-soft); }
+.steps-heading h4 { margin: 14px 0 0; font-size: 24px; line-height: 1.2; font-weight: 600; }
+.steps-list { margin: 0 0 34px; padding: 0; list-style: none; }
+.steps-list li { display: grid; grid-template-columns: 31px 1fr; gap: 14px; align-items: start; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,.17); }
+.steps-list li span { color: var(--gold-soft); font-size: 10px; font-weight: 700; letter-spacing: .1em; }
+.steps-list li p { margin: 0; color: #d3deea; font-size: 13px; line-height: 1.5; }
+.experience-card-dark .button { border-color: var(--gold-soft); background: var(--gold-soft); color: var(--navy-deep); }
+.experience-card-dark .button:hover { background: var(--white); border-color: var(--white); }
+.feature-list { margin: 8px 0 38px; border-top: 1px solid var(--line); }
+.feature-list div { display: flex; align-items: baseline; gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--line); color: var(--navy); font-size: 13px; font-weight: 600; line-height: 1.45; }
+.feature-list span { color: var(--gold); font-size: 10px; font-weight: 700; letter-spacing: .1em; }
+.access-block { margin-bottom: 33px; padding: 25px 0 0; border-top: 1px solid var(--line); }
+.access-block .eyebrow { margin-bottom: 16px; }
+.schedule { margin-top: 72px; padding-top: 50px; border-top: 1px solid var(--line); }
+.schedule h2 { margin: 0 0 14px; }
+.schedule > p { max-width: 660px; margin-bottom: 24px; }
 
 /* Footer */
 footer { padding: 65px 0 25px; background: var(--navy-deep); color: var(--white); }
@@ -302,6 +345,14 @@ footer { padding: 65px 0 25px; background: var(--navy-deep); color: var(--white)
   .cert-steps b { top: 21px; right: 18px; }
   .join-card { padding: 42px 27px; }
   .join-card h2 { font-size: 35px; }
+  .join-intro { margin-bottom: 38px; }
+  .experience-grid { grid-template-columns: 1fr; }
+  .experience-card { padding: 34px 25px; }
+  .experience-heading { gap: 12px; }
+  .experience-tag { max-width: 92px; text-align: right; }
+  .experience-card h3 { font-size: 34px; }
+  .detail-row { gap: 12px; }
+  .detail-row strong { max-width: 55%; }
   .page-hero { padding: 79px 0 75px; }
   .page-hero p { font-size: 16px; }
   .schedule { margin-top: 67px; }
